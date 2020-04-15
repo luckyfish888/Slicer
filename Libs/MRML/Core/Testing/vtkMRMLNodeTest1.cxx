@@ -2931,11 +2931,11 @@ class vtkMRMLTestScene : public vtkMRMLScene
 {
 public:
   static vtkMRMLTestScene *New();
-  typedef vtkMRMLTestScene Self;
+  using Self = vtkMRMLTestScene;
 
   vtkTypeMacro(vtkMRMLTestScene, vtkMRMLScene);
 
-  typedef NodeReferencesType TestNodeReferencesType;
+  using TestNodeReferencesType = NodeReferencesType;
   TestNodeReferencesType test_NodeReferences()
   {
     return this->NodeReferences;

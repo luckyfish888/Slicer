@@ -118,7 +118,7 @@ public:
     int PositionStatus;
     };
 
-  typedef std::vector<ControlPoint*> ControlPointsListType;
+  using ControlPointsListType = std::vector<ControlPoint *>;
 
   static vtkMRMLMarkupsNode *New();
   vtkTypeMacro(vtkMRMLMarkupsNode,vtkMRMLDisplayableNode);

@@ -746,7 +746,7 @@ public:
 
 protected:
 
-  typedef std::map< std::string, std::set<std::string> > NodeReferencesType;
+  using NodeReferencesType = std::map<std::string, std::set<std::string> >;
 
   vtkMRMLScene();
   ~vtkMRMLScene() override;
